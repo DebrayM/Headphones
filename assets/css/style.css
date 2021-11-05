@@ -1,0 +1,298 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+body .lien {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #fe696a;
+  padding: 2vh 4vh;
+  border-radius: 8px;
+}
+body .lien svg {
+  height: 18px;
+  width: 18px;
+}
+body .lien:hover {
+  background-color: #ff4243;
+}
+body .bordure {
+  border: 1px solid #7e879c;
+}
+body h2 {
+  color: #373f50;
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 5vh;
+}
+body h3 {
+  font-weight: normal;
+}
+body header {
+  height: 100vh;
+}
+body header nav {
+  margin-left: 25vh;
+  margin-right: 25vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 5vh;
+}
+body header nav .icons {
+  display: flex;
+  gap: 2vh;
+}
+body header nav .icons svg {
+  height: 18px;
+  width: 18px;
+}
+body header .entete {
+  background-image: url("../../images/bg-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 34px;
+  color: #ffffff;
+}
+body header .entete .entetecontenu {
+  width: 400px;
+  margin-left: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+body header .entete .entetecontenu .prix {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  gap: 5vh;
+}
+body header .entete .entetecontenu .prix span {
+  font-size: 1.5em;
+}
+body header .entete .entetecontenu ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  padding-top: 5vh;
+}
+body header .entete .entetecontenu ul li {
+  padding-bottom: 2vh;
+}
+body header .entete .entetecontenu ul li svg {
+  height: 18px;
+  width: 18px;
+  padding-right: 2vh;
+}
+body .sect1 {
+  display: flex;
+  justify-content: center;
+}
+body .sect1 .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .sect1 .container .headphone {
+  margin-right: 5vh;
+}
+body .sect1 .container .choose {
+  display: flex;
+  flex-direction: column;
+}
+body .sect1 .container .choose .divPrix {
+  display: flex;
+  flex-direction: row;
+  gap: 2vh;
+}
+body .sect1 .container .choose .divChoose {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 2vh;
+  padding-bottom: 8vh;
+}
+body .sect1 .container .choose .divChoose .divA {
+  border-color: #e6e6e6;
+  border-style: solid;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: block;
+}
+body .sect1 .container .choose .divChoose .divA a {
+  display: block;
+  width: 48px;
+  height: 48px;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 2px;
+}
+body .sect1 .container .choose .divChoose .divA a#roseGold {
+  background-color: #e8c4c0;
+}
+body .sect1 .container .choose .divChoose .divA a#gris {
+  background-color: #e6e6e6;
+}
+body .sect1 .container .choose .divChoose .divA a#rose {
+  background-color: #f7e6d5;
+}
+body .sect1 .container .choose .divChoose .divA a#radio1 {
+  background-image: url("../../images/color-radio01.png");
+}
+body .sect1 .container .choose .divChoose .divA a#radio2 {
+  background-image: url("../../images/color-radio02.png");
+}
+body .sect1 .container .choose .divChoose .divA a#radio3 {
+  background-image: url("../../images/color-radio03.png");
+}
+body .sect1 .container .choose .divChoose .divA:hover {
+  border-color: #fe696a;
+}
+body .sect2 {
+  display: flex;
+  justify-content: center;
+}
+body .sect2 .divrow {
+  display: flex;
+  flex-direction: row;
+}
+body .sect2 .divrow img {
+  border-radius: 4px;
+  width: 300px;
+  height: 200px;
+}
+body .sect2 .anim-pjt p {
+  position: absolute;
+  font-size: 1.2em;
+  z-index: 1;
+  opacity: 0;
+}
+body .sect2 .anim-pjt:hover p {
+  opacity: 1;
+  color: white;
+  transition: opacity 1s;
+  cursor: pointer;
+}
+body .sect2 .anim-pjt {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 1vh;
+}
+body .sect2 .anim-pjt img {
+  /* animation de l'image  */
+  transition: all 2s;
+  transition-duration: 1s;
+}
+body .sect2 .anim-pjt:hover img {
+  /* animation de l'image  */
+  filter: brightness(20%);
+  /*transform: scale(1.2); -- pas de transformation de l'image*/
+  cursor: pointer;
+}
+body .sect3 .sect3centre {
+  display: flex;
+  justify-content: center;
+}
+body .sect3 .sect3centre .sect3container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15vh;
+}
+body .sect3 .sect3centre .sect3container p {
+  width: 300px;
+  height: 100px;
+}
+body .sect3 .sect3centre .sect3container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body .sect3 .sect3centre .sect3container ul li {
+  padding-bottom: 1vh;
+}
+body .sect4 {
+  background-color: #f3f5f9;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  display: flex;
+  justify-content: center;
+}
+body .sect4 .contentcardcust {
+  display: flex;
+  gap: 2vh;
+}
+body .sect4 .contentcardcust .cardcust {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+body .sect4 .contentcardcust .cardcust .box {
+  background-color: #ffffff;
+  width: 200px;
+  padding: 2vh;
+  border-radius: 8px;
+  box-shadow: 3px 5px 3px #e6e6e6;
+  color: #7e879c;
+  font-weight: bold;
+}
+body .sect4 .contentcardcust .cardcust .testimonials {
+  display: flex;
+  gap: 12px;
+}
+body .sect4 .contentcardcust .cardcust .testimonials .divtext {
+  margin-top: 1vh;
+}
+body .sect4 .contentcardcust .cardcust .testimonials .divtext P {
+  margin: 0;
+}
+body .sect4 .contentcardcust .cardcust .testimonials .divtext .txtGras {
+  font-weight: bold;
+  color: #373f50;
+}
+body .sect4 .contentcardcust .cardcust .testimonials .divtext .txtGris {
+  font-weight: bold;
+  color: #7e879c;
+  font-size: 0.9em;
+}
+body .sect4 .contentcardcust .cardcust .testimonials img {
+  width: 64px;
+  border-radius: 50%;
+}
+body footer {
+  background-color: #373f50;
+  padding-bottom: 4vh;
+  display: flex;
+  justify-content: center;
+}
+body footer .divfoot {
+  padding-top: 4vh;
+  display: flex;
+  gap: 15vh;
+}
+body footer .divfoot ul {
+  list-style: none;
+  color: #ffffff;
+}
+body footer .divfoot ul .marge {
+  padding-top: 1vh;
+}
+body footer .divfoot ul li {
+  color: #7e879c;
+  padding-bottom: 1vh;
+}/*# sourceMappingURL=style.css.map */
